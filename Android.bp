@@ -1,0 +1,29 @@
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026-present The CortenaOS Project
+//
+
+// Build the Settings APK
+android_app {
+    name: "Settings",
+    defaults: [
+        "platform_app_defaults",
+    ],
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    privileged: true,
+    required: [
+        "privapp_whitelist_app.cortena.settings",
+    ],
+    static_libs: [],
+    uses_libs: [],
+    use_resource_processor: true,
+    resource_dirs: [],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+    flags_packages: [
+        "android.app.flags-aconfig",
+    ],
+}

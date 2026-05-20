@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** SPDX-License-Identifier: GPL-3.0-or-later
+** Copyright (C) 2026-present The CortenaOS Project
+*/
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="app.cortena.settings"
+          coreApp="true"
+          android:sharedUserId="android.uid.system">
+
+    <original-package android:name="app.cortena.settings"/>
+
+</manifest>
