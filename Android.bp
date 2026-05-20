@@ -3,9 +3,9 @@
 // Copyright (C) 2026-present The CortenaOS Project
 //
 
-// Build the Settings APK
 android_app {
-    name: "Settings",
+    // TODO: replace to "Settings" when ready to replace original settings app
+    name: "CortenaSettings",
     defaults: [
         "platform_app_defaults",
     ],
@@ -13,17 +13,21 @@ android_app {
     certificate: "platform",
     system_ext_specific: true,
     privileged: true,
-    required: [
-        "privapp_whitelist_app.cortena.settings",
+    srcs: [
+        "src/**/*.kt",
     ],
-    static_libs: [],
-    uses_libs: [],
-    use_resource_processor: true,
-    resource_dirs: [],
-    optimize: {
-        proguard_flags_files: ["proguard.flags"],
-    },
-    flags_packages: [
-        "android.app.flags-aconfig",
+    resource_dirs: [
+        "res",
+    ],
+    static_libs: [
+        "androidx.activity_activity-compose",
+        "androidx.compose.ui_ui",
+        "androidx.compose.ui_ui-tooling-preview",
+        "androidx.compose.material3_material3",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.foundation_foundation",
+    ],
+    kotlincflags: [
+        "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
     ],
 }

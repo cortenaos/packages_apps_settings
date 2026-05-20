@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** SPDX-License-Identifier: GPL-3.0-or-later
+** Copyright (C) 2026-present The CortenaOS Project
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of the Settings activity shown within the application itself. -->
+    <string name="settings_label">Settings</string>
+    <!-- Title of the Settings activity shown in the Launcher. [CHAR LIMIT=20] -->
+    <string name="settings_label_launcher">Settings</string>
+    <!-- Label for option to select a settings panel as a shortcut -->
+    <string name="settings_shortcut">Settings shortcut</string>
+</resources>
