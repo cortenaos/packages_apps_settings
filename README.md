@@ -1,5 +1,7 @@
 ## settings
 
+rebuild use `m CortenaSettings`
+
 ## license
 
 ```
