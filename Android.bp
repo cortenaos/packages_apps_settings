@@ -22,7 +22,6 @@ android_app {
     static_libs: [
         "androidx.activity_activity-compose",
         "androidx.compose.ui_ui",
-        "androidx.compose.ui_ui-tooling-preview",
         "androidx.compose.material3_material3",
         "androidx.compose.runtime_runtime",
         "androidx.compose.foundation_foundation",

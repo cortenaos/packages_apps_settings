@@ -7,9 +7,9 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="app.cortena.settings"
+          android:sharedUserId="android.uid.system"
           coreApp="true"
-          android:sharedUserId="android.uid.system">
+          package="app.cortena.settings">
 
     <original-package android:name="app.cortena.settings" />
 
