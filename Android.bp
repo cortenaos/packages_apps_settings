@@ -13,6 +13,9 @@ android_app {
     certificate: "platform",
     system_ext_specific: true,
     privileged: true,
+    required: [
+        "privapp_whitelist_app.cortena.settings",
+    ],
     srcs: [
         "src/**/*.kt",
     ],
